@@ -56,8 +56,8 @@ funBus.addEventListener('click', function(event){
     }, 3000)
 })
 
-const firstName = document.querySelector('body');
-firstName.addEventListener('keydown', function(event){
+const noKeys = document.querySelector('body');
+noKeys.addEventListener('keydown', function(event){
  alert(`You can't press: ${event.key}`); 
 });
 
@@ -76,16 +76,28 @@ destinImg.addEventListener('drag', function(event){
     }, 2000)
 });
 
+const paintIt = document.querySelector('.text-content');
+paintIt.addEventListener('mouseleave', function(eventObject){
+  eventObject.target.style.color = "red";
+});
 
-  //load
+
+window.addEventListener('load', (event) => {
+    alert('Please Hold While The Fun Bus Loads Up!');
+});
 
 
-
-  //focus
-
-  //resize
-
-  //scroll
-
-  //select
+window.addEventListener ('resize', (event) => {
+console.log('You have resized the window!');
+});
   
+
+window.addEventListener('scroll', function(event){
+ console.log(`User is Scrolling`); 
+});
+
+
+const forLaughs = document.querySelector('body');
+forLaughs.addEventListener('contextmenu', function(event){
+    alert(`Do you need some context?`); 
+});
