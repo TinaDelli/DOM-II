@@ -1,16 +1,3 @@
-// Your code goes here
-// Using your index.js file, create 10 unique event listeners. using your creativity to make the Fun Bus site more interactive. Here are some unique events you could try to use:
-//  mouseover
-//  keydown
-//  wheel
-//  drag / drop
-//  load
-//  focus
-//  resize
-//  scroll
-//  select
-//  dblclick
-
 const firstBtn = document.querySelector('.btn');
 firstBtn.addEventListener('mouseover', function(event){
  event.target.style.color = "yellow";
